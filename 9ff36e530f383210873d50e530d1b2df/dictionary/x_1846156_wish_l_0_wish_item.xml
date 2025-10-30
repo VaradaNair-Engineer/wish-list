@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="8b642a930f383210873d50e530d1b2bd" label="Wish Item" max_length="40" name="x_1846156_wish_l_0_wish_item" type="collection">
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element label="Item" mandatory="true" max_length="40" name="item" type="string"/>
+        <element label="Requester" mandatory="true" max_length="32" name="requester" reference="imp_user" type="reference"/>
+        <index name="index">
+            <element name="requester"/>
+        </index>
+        <index name="index2">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>
